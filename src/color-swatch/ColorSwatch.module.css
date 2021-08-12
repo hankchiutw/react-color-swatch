@@ -1,7 +1,9 @@
 .root {
-  width: 400px;
-  height: 80px;
+  width: 800px;
+  height: 120px;
   margin: 20px 10px 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .refreshAnochor {
@@ -17,4 +19,9 @@
   height: 100%;
   border-radius: 10px;
   overflow: hidden;
+}
+
+.cellContainer {
+  flex: 1;
+  height: 100%;
 }

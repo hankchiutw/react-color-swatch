@@ -1,6 +1,18 @@
 .cell {
   min-width: 10px;
   min-height: 10px;
-  flex: 1;
   cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+
+.label {
+  background: rgba(0, 0, 0, 0.3);
+  color: #dddddd;
+  font-size: 12px;
+  text-align: center;
+  padding: 4px 0;
 }

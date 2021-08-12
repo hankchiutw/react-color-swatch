@@ -4,6 +4,6 @@ export class HslColorItem implements ColorItem {
   constructor(public hue: number, public saturation: number, public lightness: number) {}
 
   get cssColor() {
-    return `hsl(${this.hue}deg, ${this.saturation}%, ${this.lightness}%)`;
+    return `hsl(${this.hue}, ${this.saturation}%, ${this.lightness}%)`;
   }
 }
