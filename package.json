@@ -1,6 +1,6 @@
 {
-  "name": "color-swatch",
-  "version": "0.0.0",
+  "name": "react-color-swatch",
+  "version": "0.1.0",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

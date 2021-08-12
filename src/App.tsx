@@ -1,14 +1,16 @@
 import React from 'react';
-import './App.css';
+import style from './App.module.css';
 import { ColorSwatch } from './color-swatch';
 
 const sourceUrl = 'https://challenge.structrs.com/rest/colors/list';
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <div className={style.title}>Random colors from remote</div>
       <ColorSwatch sourceUrl={sourceUrl} />
 
+      <div className={style.title}>Default colors in RGB</div>
       <ColorSwatch
         sourceUrl={sourceUrl}
         defaultColors={[
@@ -20,6 +22,7 @@ function App() {
         ]}
       />
 
+      <div className={style.title}>Default colors in HSL</div>
       <ColorSwatch
         sourceUrl={sourceUrl}
         defaultColors={[
