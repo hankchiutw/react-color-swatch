@@ -5,10 +5,17 @@ import { ColorSwatch } from './color-swatch';
 const sourceUrl = 'https://challenge.structrs.com/rest/colors/list';
 
 function App() {
+  const alertColor = (color: string) => {
+    alert(color);
+  };
+
   return (
     <div>
       <div className={style.title}>Random colors from remote</div>
       <ColorSwatch sourceUrl={sourceUrl} />
+
+      <div className={style.title}>With onSelect</div>
+      <ColorSwatch sourceUrl={sourceUrl} onSelect={alertColor} />
 
       <div className={style.title}>Default colors in RGB</div>
       <ColorSwatch

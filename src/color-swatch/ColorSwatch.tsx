@@ -5,10 +5,11 @@ import style from './ColorSwatch.module.css';
 
 interface ColorSwatchProps {
   sourceUrl: string;
+  onSelect?: (color: string) => void;
   defaultColors?: string[];
 }
 
-function ColorSwatch({ defaultColors, sourceUrl }: ColorSwatchProps) {
+function ColorSwatch({ defaultColors, sourceUrl, onSelect }: ColorSwatchProps) {
   const [colors, refreshColors] = useRemoteColors(sourceUrl);
   const [selectedIndex, setSelectedIndex] = useState<number>(-1);
 
@@ -18,6 +19,7 @@ function ColorSwatch({ defaultColors, sourceUrl }: ColorSwatchProps) {
 
   const selectCell = (i: number) => {
     setSelectedIndex(i);
+    onSelect && onSelect(colors[i]);
   };
 
   return (
