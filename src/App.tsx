@@ -10,7 +10,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className={style.root}>
       <div className={style.title}>Random colors from remote</div>
       <ColorSwatch sourceUrl={sourceUrl} />
 
