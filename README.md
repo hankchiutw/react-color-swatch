@@ -1,6 +1,8 @@
 # react-color-swatch
 > Simple color swatch React component.
 
+**Demo site** https://react-color-swatch.vercel.app
+
 ### Features
 - Can fetch colors from remote.
 - Can provide colors manually.
